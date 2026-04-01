@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelResponse AI - Unified Platform</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .view-section { display: none; height: 100vh; flex-direction: column; overflow: hidden; padding: 1rem; }
+        .view-section.active { display: flex; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+        .form-group label { font-size: 0.85rem; color: var(--text-muted); }
+        .form-input { background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); color: white; padding: 0.75rem; border-radius: 6px; }
+        .btn-full { width: 100%; margin-top: 1rem; justify-content: center; }
+        .auth-container { max-width: 400px; margin: auto; padding: 2rem; }
+        /* Common Header overrides */
+        .universal-nav { display:flex; justify-content: space-between; width: 100%; align-items: center;}
+        
+        .flex-row { display: flex; gap: 1rem; }
+        .flex-col { display: flex; flex-direction: column; gap: 1rem; }
+        .w-half { width: 50%; }
+        .w-full { width: 100%; }
+        
+        .grid-dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; height: calc(100vh - 100px); }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- =========== LOGIN / SIGNUP VIEW =========== -->
+    <div id="view-login" class="view-section active">
+        <div class="glass-panel auth-container outline-glow">
+            <div style="text-align:center; margin-bottom: 2rem;">
+                <i data-lucide="shield-alert" class="logo-icon glow-pulse" style="width: 48px; height: 48px; margin: 0 auto; display: block;"></i>
+                <h1 style="margin: 0.5rem 0 0.2rem 0;">SentinelResponse <span>AI</span></h1>
+                <span class="subtitle">Unified Access Portal</span>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="auth-email" class="form-input" placeholder="user@agency.gov" value="demo@test.com">
+            </div>
+            
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="auth-password" class="form-input" value="password123">
+            </div>
+
+            <div class="form-group">
+                <label>Access Role (Simulation Override)</label>
+                <select id="auth-role" class="form-input">
+                    <option value="authority">Authority (Control Room) 🏛️</option>
+                    <option value="ambulance">Ambulance Staff 🚑</option>
+                    <option value="admin">Hospital Admin 🏥</option>
+                    <option value="volunteer">Volunteer / Citizen 🤝</option>
+                </select>
+            </div>
+
+            <button id="btn-login" class="btn-primary btn-full glow-btn">
+                <i data-lucide="log-in"></i> Authenticate & Connect
+            </button>
+        </div>
+    </div>
+
+
+    <!-- =========== AUTHORITY DASHBOARD (Previous Command Center) =========== -->
+    <div id="view-authority" class="view-section app-container">
+        <header class="glass-header">
+            <div class="universal-nav">
+                <div class="logo-area">
+                    <i data-lucide="shield-alert" class="logo-icon"></i>
+                    <div class="logo-text">
+                         <h1 style="font-size:1.1rem">Command Center <span>(Authority)</span></h1>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <button class="btn-primary" onclick="logout()" style="padding: 0.3rem 0.8rem; background: var(--glass-bg); font-size:0.8rem;">Logout</button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="dashboard-grid">
+            <aside class="sidebar-left glass-panel">
+                <section class="panel-section alerts-container" style="flex:1;">
+                    <div class="section-title"><i data-lucide="radio-receiver"></i><h2>Active Citizen Reports</h2></div>
+                    <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom: 0.5rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">
+                        <i>Chronological list of unassigned emergency events reported by Citizens. Awaiting Ambulance dispatch.</i>
+                    </p>
+                    <div class="alerts-feed" id="alerts-feed"></div>
+                </section>
+            </aside>
+            <main class="map-container glass-panel">
+                 <div id="map"></div>
+            </main>
+            <aside class="sidebar-right glass-panel">
+                <div class="section-title"><i data-lucide="hospital"></i><h2>Network Load Balancer</h2></div>
+                <div class="hospitals-list" id="hospitals-list"></div>
+            </aside>
+        </div>
+    </div>
+
+
+    <!-- =========== AMBULANCE STAFF DASHBOARD =========== -->
+    <div id="view-ambulance" class="view-section">
+        <header class="glass-header">
+            <div class="universal-nav">
+                <div class="logo-area">
+                    <i data-lucide="ambulance" class="logo-icon glow-pulse text-blue"></i>
+                    <div class="logo-text"><h1 style="font-size:1.1rem">Unit 42 <span>(Mobile)</span></h1></div>
+                </div>
+                <button class="btn-primary" onclick="logout()" style="padding: 0.3rem 0.8rem; background: transparent; border:1px solid #fff">Logout</button>
+            </div>
+        </header>
+
+        <div class="grid-dashboard">
+            <!-- Left: Patient Entry Form -->
+            <div class="glass-panel outline-glow" style="display:flex; flex-direction: column;">
+                <div class="section-title"><i data-lucide="user-plus"></i><h2>Triage Data Entry</h2></div>
+                
+                <div class="form-group" id="amb-inbox-container" style="margin-top: 1rem; border: 1px dashed var(--text-accent); padding: 0.75rem; border-radius: 6px; background: rgba(59, 130, 246, 0.05);">
+                    <label style="color:var(--text-accent); display:flex; justify-content:space-between;"><span><i data-lucide="inbox" class="sm-icon"></i> Pending Dispatches</span> <span id="amb-pending-badge" class="badge red">0</span></label>
+                    <select id="amb-pending-select" class="form-input" style="margin-top:0.5rem;">
+                        <option value="">-- No pending emergencies --</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label>Severity Level</label>
+                    <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                        <button class="form-input triage-btn" data-val="red" style="flex:1; border-color:var(--color-red); cursor:pointer;">🔴 Critical</button>
+                        <button class="form-input triage-btn" data-val="yellow" style="flex:1; border-color:var(--color-yellow); cursor:pointer;">🟡 Moderate</button>
+                        <button class="form-input triage-btn" data-val="green" style="flex:1; border-color:var(--color-green); cursor:pointer;">🟢 Minor</button>
+                    </div>
+                    <input type="hidden" id="amb-severity-val" value="yellow">
+                </div>
+
+                <div class="form-group">
+                    <label>Symptoms / Injury</label>
+                    <textarea id="amb-symptoms" class="form-input" rows="3" placeholder="Blunt force trauma, irregular breathing..."></textarea>
+                </div>
+
+                <button id="btn-dispatch-ai" class="btn-primary" style="margin-top: auto;">
+                    <i data-lucide="cpu"></i> Request AI Route Allocation
+                </button>
+                <div style="font-size:0.75rem; color:var(--text-muted); text-align:center; display:block; margin-top:0.75rem; line-height:1.4;">
+                    <i>Initializes heuristic matrix calculating Distance Penalty vs Medical Capability to find the optimal secure route.</i>
+                </div>
+            </div>
+
+            <!-- Right: AI Logic Output -->
+            <div class="flex-col">
+                <div class="glass-panel" style="flex: 1;">
+                    <div class="section-title"><i data-lucide="map-pin"></i><h2>AI Routing Directive</h2></div>
+                    
+                    <div id="amb-routing-output" style="display:none; text-align:center; padding: 2rem;">
+                         <i data-lucide="hospital" style="width: 48px; height: 48px; color: var(--color-green); margin-bottom:1rem;"></i>
+                         <h2 id="amb-assigned-hospital" style="font-size:1.5rem; margin-bottom: 0.5rem;">SF General Trauma Center</h2>
+                         <p id="amb-eta-text" style="color:var(--text-muted)">Eta: 8 Minutes &middot; 2.4 miles</p>
+                         
+                         <div style="background: rgba(16, 185, 129, 0.2); border: 1px solid var(--color-green); border-radius: 6px; padding: 1rem; margin-top: 1.5rem; text-align:left;">
+                             <strong id="amb-reason-title"><i data-lucide="check-circle" class="sm-icon text-green"></i> Secure Allocation</strong>
+                             <p id="amb-reason-desc" style="font-size: 0.85rem; margin-top: 0.5rem; color:var(--text-muted);">
+                                 Selected via AI Equity Algorithim. Nearest location with active Level 1 Trauma bays available.
+                             </p>
+                         </div>
+                    </div>
+                    
+                    <div id="amb-routing-idle" style="height: 100%; display: flex; flex-direction:column; justify-content:center; align-items:center; opacity: 0.5;">
+                        <i data-lucide="navigation" style="width:48px; height:48px; margin-bottom:1rem;"></i>
+                        <p>Awaiting Patient Data...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== HOSPITAL ADMIN DASHBOARD (V2) =========== -->
+    <div id="view-admin" class="view-section" style="padding: 1rem;">
+        <header class="glass-header" style="margin-bottom:0.5rem">
+            <div class="universal-nav">
+                <div class="logo-area">
+                    <i data-lucide="activity" class="logo-icon glow-pulse text-green"></i>
+                    <div class="logo-text"><h1 style="font-size:1.1rem">Hospital Alert & Prep System <span>(<span id="admin-hosp-name-header">Loading...</span>)</span></h1></div>
+                </div>
+                <div class="flex-row">
+                    <select id="admin-hospital-select" class="form-input" style="padding: 0.3rem; margin-right: 1rem;">
+                        <!-- Options loaded by JS to simulate different node logins -->
+                    </select>
+                    <button class="btn-primary" onclick="logout()" style="padding: 0.3rem 0.8rem; background: transparent; border:1px solid #fff">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- New Admin Grid (3 Columns) -->
+        <div style="display: grid; grid-template-columns: 350px 1fr 300px; gap: 1rem; height: calc(100vh - 80px); overflow:hidden;">
+            
+            <!-- Left: Incoming Patient Alerts (CORE FEATURE) -->
+            <aside class="glass-panel" style="overflow-y:auto; border-top: 4px solid var(--color-red);">
+                <div class="section-title"><i data-lucide="siren" class="text-red animate-pulse"></i><h2>Inbound Patients</h2><span class="badge red" id="inbound-count">0</span></div>
+                <div id="admin-inbound-feed" style="margin-top:1rem; display:flex; flex-direction:column; gap:0.5rem">
+                     <!-- Cards injected by js -->
+                </div>
+            </aside>
+
+            <!-- Center: The Mega Overview Panel -->
+            <main style="display: flex; flex-direction: column; gap: 1rem; overflow-y:auto;">
+                
+                <div class="notification-banner" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.4); padding: 0.75rem; border-radius: 6px; font-size: 0.85rem; line-height:1.4;">
+                    <i data-lucide="info" style="color:var(--text-accent); width:16px; margin-right:5px; vertical-align:text-bottom;"></i>
+                    <b>Demo Tip:</b> Alter your "Current Load" to push Occupancy above 95% to see the backend automatically redirect new incoming ambulances to a different facility via the Dynamic Rerouting Engine!
+                </div>
+
+                <!-- Center Top: Overview & Accomodation Indicator -->
+                <div class="glass-panel outline-glow" style="display: grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                    <div>
+                        <div class="section-title"><i data-lucide="bar-chart-2"></i><h2>Capacity Overview</h2></div>
+                        <div style="display:flex; justify-content:space-between; margin-top:1rem;">
+                            <div class="stat-box"><span class="stat-label">Total Beds</span><span class="stat-value" id="ad-tot-cap">--</span></div>
+                            <div class="stat-box"><span class="stat-label">Occupied</span><span class="stat-value" id="ad-occ-bed">--</span></div>
+                            <div class="stat-box"><span class="stat-label">ICU Avail</span><span class="stat-value" id="ad-icu-avail">--</span></div>
+                        </div>
+                        <div class="capacity-bar-container" style="margin-top:1rem; height:12px;"><div id="ad-cap-bar" class="capacity-bar" style="width:0%"></div></div>
+                        <div style="text-align:right; font-size:0.8rem; color:var(--text-muted); margin-top:0.2rem;" id="ad-accom-msg"></div>
+                        <div style="margin-top:1.5rem;">
+                            <button id="btn-admin-sync" class="btn-primary" style="width:100%; font-size: 0.85rem;"><i data-lucide="refresh-cw"></i> Sync Authority Network</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="section-title"><i data-lucide="zap"></i><h2>Facilities & Equipment</h2></div>
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0.5rem; margin-top:1rem; font-size:0.85rem;">
+                            <div style="background:rgba(0,0,0,0.3); padding:0.5rem; border-radius:4px;" id="ad-fac-ot"></div>
+                            <div style="background:rgba(0,0,0,0.3); padding:0.5rem; border-radius:4px;" id="ad-fac-vent"></div>
+                            <div style="background:rgba(0,0,0,0.3); padding:0.5rem; border-radius:4px;" id="ad-fac-trauma"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Mid: Staff & Resources (2 cols) -->
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                    <!-- Staff -->
+                    <div class="glass-panel">
+                        <div class="section-title"><i data-lucide="users"></i><h2>Staff Availability</h2></div>
+                        <ul style="list-style:none; padding:0; margin:0.5rem 0 0 0; font-size:0.85rem; display:flex; flex-direction:column; gap:0.5rem;" id="ad-staff-list">
+                            <!-- Injected -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Resources & Blood -->
+                    <div class="glass-panel">
+                        <div class="section-title"><i data-lucide="droplet" class="text-red"></i><h2>Blood Bank & Supplies</h2></div>
+                        <div id="ad-blood-bank" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem;"></div>
+                        <div id="ad-supplies" style="margin-top:1rem; font-size:0.85rem; color:var(--text-muted);"></div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right: AI Suggestions & Network Comparison -->
+            <aside style="display:flex; flex-direction:column; gap:1rem; overflow-y:auto;">
+                <!-- AI Suggestions -->
+                <div class="glass-panel" style="border:1px solid var(--text-accent); background:rgba(96, 165, 250, 0.05)">
+                     <div class="section-title"><i data-lucide="bot" class="text-blue"></i><h2>AI Suggestions</h2></div>
+                     <ul id="ad-ai-suggest" style="padding-left:1.5rem; font-size:0.85rem; color:var(--text-muted); margin:0.5rem 0; display:flex; flex-direction:column; gap:0.5rem;">
+                     </ul>
+                </div>
+
+                <!-- Network Comparison Table -->
+                <div class="glass-panel" style="flex:1;">
+                    <div class="section-title"><i data-lucide="globe"></i><h2>Global Network Load</h2></div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">Live AI Load Balancer Distances</div>
+                    <div id="ad-network-compare" style="display:flex; flex-direction:column; gap:0.5rem; overflow-y:auto; max-height: 400px; font-size:0.8rem;">
+                       <!-- Hospitals injected here -->
+                    </div>
+                </div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <!-- =========== VOLUNTEER / CITIZEN DASHBOARD =========== -->
+    <div id="view-volunteer" class="view-section">
+        <header class="glass-header" style="background: rgba(59, 130, 246, 0.2); border-color: rgba(59, 130, 246, 0.4);">
+            <div class="universal-nav">
+                <div class="logo-area">
+                    <i data-lucide="users" class="logo-icon glow-pulse text-blue"></i>
+                    <div class="logo-text"><h1 style="font-size:1.1rem">Citizen Reporter <span>(Secure)</span></h1></div>
+                </div>
+                <button class="btn-primary" onclick="logout()" style="padding: 0.3rem 0.8rem; background: transparent; border:1px solid #fff">Logout</button>
+            </div>
+        </header>
+
+        <div class="auth-container glass-panel outline-glow" style="margin-top: 2rem;">
+            <div class="section-title" style="margin-bottom: 1rem;"><i data-lucide="camera"></i><h2>Report Emergency</h2></div>
+            
+            <div class="form-group">
+                <label>Incident Location</label>
+                <div style="display:flex; gap:0.5rem;">
+                   <input type="text" id="vol-loc-input" class="form-input" style="flex:1;" placeholder="Type cross-street or hit GPS..." value="">
+                   <button id="btn-vol-location" class="btn-primary" style="padding: 0 1rem; background: var(--glass-bg)" title="Get Live GPS"><i data-lucide="crosshair"></i></button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Description (What do you see?)</label>
+                <textarea id="vol-desc" class="form-input" rows="3" placeholder="Car crash, one victim bleeding..."></textarea>
+            </div>
+
+            <button id="btn-vol-submit" class="btn-primary btn-full glow-btn" style="background: var(--primary-gradient)">
+                <i data-lucide="send"></i> Notify Emergency Network
+            </button>
+            
+            <div id="vol-success-msg" style="display:none; margin-top:1rem; padding: 1rem; background:rgba(16,185,129,0.1); border-left:4px solid var(--color-green); border-radius:4px;">
+                <strong><i data-lucide="check" class="sm-icon"></i> Transmitted to Command Center</strong><br>
+                <span style="font-size:0.8rem; color:var(--text-muted)">AI Triage initialized. Nearest units alerted. Please standby and apply pressure to any wounds if safe.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="js/data.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/auth.js"></script>
+    
+    <!-- Dashboard specific JS (Split from app.js) -->
+    <script src="js/map.js"></script>
+    <script src="js/alerts.js"></script>
+    <script src="js/simulation.js"></script>
+    
+    <script src="js/views/ambulance.js"></script>
+    <script src="js/views/admin.js"></script>
+    <script src="js/views/volunteer.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

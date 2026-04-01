@@ -1,0 +1,2410 @@
+{
+    "hospitals": [
+        {
+            "hospital_id": "HOS-001",
+            "hospital_name": "Hope Surgical Institute",
+            "location": {
+                "lat": 37.767929,
+                "lng": -122.461823
+            },
+            "total_beds": 400,
+            "available_beds": 87,
+            "ICU_beds_total": 35,
+            "ICU_beds_available": 17,
+            "doctors_total": 46,
+            "doctors_on_duty": 18,
+            "emergency_doctors": 1,
+            "nurses_on_duty": 54,
+            "operation_theatres": 3,
+            "ventilators": 10,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 400
+        },
+        {
+            "hospital_id": "HOS-002",
+            "hospital_name": "Presidio Surgical Institute",
+            "location": {
+                "lat": 37.804522,
+                "lng": -122.482184
+            },
+            "total_beds": 210,
+            "available_beds": 183,
+            "ICU_beds_total": 22,
+            "ICU_beds_available": 20,
+            "doctors_total": 144,
+            "doctors_on_duty": 119,
+            "emergency_doctors": 15,
+            "nurses_on_duty": 357,
+            "operation_theatres": 11,
+            "ventilators": 32,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 210
+        },
+        {
+            "hospital_id": "HOS-003",
+            "hospital_name": "Pioneer Surgical Institute",
+            "location": {
+                "lat": 37.72268,
+                "lng": -122.491207
+            },
+            "total_beds": 462,
+            "available_beds": 232,
+            "ICU_beds_total": 44,
+            "ICU_beds_available": 4,
+            "doctors_total": 26,
+            "doctors_on_duty": 21,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 63,
+            "operation_theatres": 2,
+            "ventilators": 8,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 462
+        },
+        {
+            "hospital_id": "HOS-004",
+            "hospital_name": "Presidio Surgical Institute",
+            "location": {
+                "lat": 37.75373,
+                "lng": -122.442806
+            },
+            "total_beds": 80,
+            "available_beds": 3,
+            "ICU_beds_total": 11,
+            "ICU_beds_available": 6,
+            "doctors_total": 22,
+            "doctors_on_duty": 22,
+            "emergency_doctors": 3,
+            "nurses_on_duty": 66,
+            "operation_theatres": 5,
+            "ventilators": 15,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 80
+        },
+        {
+            "hospital_id": "HOS-005",
+            "hospital_name": "Presidio Clinic",
+            "location": {
+                "lat": 37.786097,
+                "lng": -122.447939
+            },
+            "total_beds": 116,
+            "available_beds": 61,
+            "ICU_beds_total": 7,
+            "ICU_beds_available": 3,
+            "doctors_total": 74,
+            "doctors_on_duty": 24,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 96,
+            "operation_theatres": 8,
+            "ventilators": 19,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 116
+        },
+        {
+            "hospital_id": "HOS-006",
+            "hospital_name": "Bayview Health System",
+            "location": {
+                "lat": 37.737202,
+                "lng": -122.421028
+            },
+            "total_beds": 377,
+            "available_beds": 237,
+            "ICU_beds_total": 56,
+            "ICU_beds_available": 2,
+            "doctors_total": 133,
+            "doctors_on_duty": 86,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 258,
+            "operation_theatres": 8,
+            "ventilators": 26,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 377
+        },
+        {
+            "hospital_id": "HOS-007",
+            "hospital_name": "Trinity Healthcare",
+            "location": {
+                "lat": 37.788808,
+                "lng": -122.500103
+            },
+            "total_beds": 197,
+            "available_beds": 38,
+            "ICU_beds_total": 15,
+            "ICU_beds_available": 11,
+            "doctors_total": 54,
+            "doctors_on_duty": 23,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 46,
+            "operation_theatres": 2,
+            "ventilators": 14,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 197
+        },
+        {
+            "hospital_id": "HOS-008",
+            "hospital_name": "Metropolitan Clinic",
+            "location": {
+                "lat": 37.765337,
+                "lng": -122.44232
+            },
+            "total_beds": 454,
+            "available_beds": 22,
+            "ICU_beds_total": 22,
+            "ICU_beds_available": 8,
+            "doctors_total": 60,
+            "doctors_on_duty": 30,
+            "emergency_doctors": 1,
+            "nurses_on_duty": 90,
+            "operation_theatres": 10,
+            "ventilators": 29,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 454
+        },
+        {
+            "hospital_id": "HOS-009",
+            "hospital_name": "Memorial Health System",
+            "location": {
+                "lat": 37.723965,
+                "lng": -122.390163
+            },
+            "total_beds": 305,
+            "available_beds": 161,
+            "ICU_beds_total": 29,
+            "ICU_beds_available": 26,
+            "doctors_total": 124,
+            "doctors_on_duty": 42,
+            "emergency_doctors": 1,
+            "nurses_on_duty": 84,
+            "operation_theatres": 6,
+            "ventilators": 8,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 305
+        },
+        {
+            "hospital_id": "HOS-010",
+            "hospital_name": "General Healthcare",
+            "location": {
+                "lat": 37.803122,
+                "lng": -122.424583
+            },
+            "total_beds": 85,
+            "available_beds": 68,
+            "ICU_beds_total": 8,
+            "ICU_beds_available": 5,
+            "doctors_total": 98,
+            "doctors_on_duty": 56,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 168,
+            "operation_theatres": 10,
+            "ventilators": 38,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 85
+        },
+        {
+            "hospital_id": "HOS-011",
+            "hospital_name": "Sunrise Medical Center",
+            "location": {
+                "lat": 37.723493,
+                "lng": -122.436488
+            },
+            "total_beds": 185,
+            "available_beds": 47,
+            "ICU_beds_total": 15,
+            "ICU_beds_available": 1,
+            "doctors_total": 120,
+            "doctors_on_duty": 100,
+            "emergency_doctors": 13,
+            "nurses_on_duty": 300,
+            "operation_theatres": 11,
+            "ventilators": 30,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 185
+        },
+        {
+            "hospital_id": "HOS-012",
+            "hospital_name": "General Regional Center",
+            "location": {
+                "lat": 37.80156,
+                "lng": -122.43646
+            },
+            "total_beds": 478,
+            "available_beds": 241,
+            "ICU_beds_total": 66,
+            "ICU_beds_available": 52,
+            "doctors_total": 36,
+            "doctors_on_duty": 21,
+            "emergency_doctors": 1,
+            "nurses_on_duty": 84,
+            "operation_theatres": 7,
+            "ventilators": 35,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 478
+        },
+        {
+            "hospital_id": "HOS-013",
+            "hospital_name": "City Surgical Institute",
+            "location": {
+                "lat": 37.789197,
+                "lng": -122.417532
+            },
+            "total_beds": 139,
+            "available_beds": 99,
+            "ICU_beds_total": 11,
+            "ICU_beds_available": 9,
+            "doctors_total": 23,
+            "doctors_on_duty": 10,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 40,
+            "operation_theatres": 6,
+            "ventilators": 13,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 139
+        },
+        {
+            "hospital_id": "HOS-014",
+            "hospital_name": "Bayview Hospital",
+            "location": {
+                "lat": 37.713845,
+                "lng": -122.50251
+            },
+            "total_beds": 259,
+            "available_beds": 168,
+            "ICU_beds_total": 15,
+            "ICU_beds_available": 14,
+            "doctors_total": 99,
+            "doctors_on_duty": 55,
+            "emergency_doctors": 7,
+            "nurses_on_duty": 165,
+            "operation_theatres": 2,
+            "ventilators": 19,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 259
+        },
+        {
+            "hospital_id": "HOS-015",
+            "hospital_name": "Valley Medical Center",
+            "location": {
+                "lat": 37.752036,
+                "lng": -122.414635
+            },
+            "total_beds": 412,
+            "available_beds": 315,
+            "ICU_beds_total": 22,
+            "ICU_beds_available": 15,
+            "doctors_total": 59,
+            "doctors_on_duty": 23,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 46,
+            "operation_theatres": 12,
+            "ventilators": 39,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 412
+        },
+        {
+            "hospital_id": "HOS-016",
+            "hospital_name": "Mission Surgical Institute",
+            "location": {
+                "lat": 37.757889,
+                "lng": -122.398676
+            },
+            "total_beds": 261,
+            "available_beds": 63,
+            "ICU_beds_total": 34,
+            "ICU_beds_available": 28,
+            "doctors_total": 113,
+            "doctors_on_duty": 99,
+            "emergency_doctors": 9,
+            "nurses_on_duty": 396,
+            "operation_theatres": 11,
+            "ventilators": 22,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 261
+        },
+        {
+            "hospital_id": "HOS-017",
+            "hospital_name": "Hope Healthcare",
+            "location": {
+                "lat": 37.704879,
+                "lng": -122.453743
+            },
+            "total_beds": 126,
+            "available_beds": 11,
+            "ICU_beds_total": 5,
+            "ICU_beds_available": 2,
+            "doctors_total": 40,
+            "doctors_on_duty": 18,
+            "emergency_doctors": 3,
+            "nurses_on_duty": 54,
+            "operation_theatres": 11,
+            "ventilators": 35,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 126
+        },
+        {
+            "hospital_id": "HOS-018",
+            "hospital_name": "Mercy Health System",
+            "location": {
+                "lat": 37.7502,
+                "lng": -122.482829
+            },
+            "total_beds": 168,
+            "available_beds": 51,
+            "ICU_beds_total": 8,
+            "ICU_beds_available": 2,
+            "doctors_total": 119,
+            "doctors_on_duty": 119,
+            "emergency_doctors": 6,
+            "nurses_on_duty": 357,
+            "operation_theatres": 11,
+            "ventilators": 39,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 168
+        },
+        {
+            "hospital_id": "HOS-019",
+            "hospital_name": "Sutter Regional Center",
+            "location": {
+                "lat": 37.747466,
+                "lng": -122.413575
+            },
+            "total_beds": 392,
+            "available_beds": 288,
+            "ICU_beds_total": 19,
+            "ICU_beds_available": 11,
+            "doctors_total": 83,
+            "doctors_on_duty": 57,
+            "emergency_doctors": 5,
+            "nurses_on_duty": 114,
+            "operation_theatres": 7,
+            "ventilators": 25,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 392
+        },
+        {
+            "hospital_id": "HOS-020",
+            "hospital_name": "Presidio Surgical Institute",
+            "location": {
+                "lat": 37.788851,
+                "lng": -122.489793
+            },
+            "total_beds": 179,
+            "available_beds": 25,
+            "ICU_beds_total": 18,
+            "ICU_beds_available": 8,
+            "doctors_total": 127,
+            "doctors_on_duty": 62,
+            "emergency_doctors": 9,
+            "nurses_on_duty": 248,
+            "operation_theatres": 5,
+            "ventilators": 40,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 179
+        },
+        {
+            "hospital_id": "HOS-021",
+            "hospital_name": "Valley Surgical Institute",
+            "location": {
+                "lat": 37.787908,
+                "lng": -122.482858
+            },
+            "total_beds": 73,
+            "available_beds": 10,
+            "ICU_beds_total": 9,
+            "ICU_beds_available": 2,
+            "doctors_total": 36,
+            "doctors_on_duty": 27,
+            "emergency_doctors": 3,
+            "nurses_on_duty": 54,
+            "operation_theatres": 8,
+            "ventilators": 27,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 73
+        },
+        {
+            "hospital_id": "HOS-022",
+            "hospital_name": "Golden Gate Hospital",
+            "location": {
+                "lat": 37.749566,
+                "lng": -122.43877
+            },
+            "total_beds": 407,
+            "available_beds": 175,
+            "ICU_beds_total": 28,
+            "ICU_beds_available": 21,
+            "doctors_total": 41,
+            "doctors_on_duty": 20,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 60,
+            "operation_theatres": 10,
+            "ventilators": 40,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 407
+        },
+        {
+            "hospital_id": "HOS-023",
+            "hospital_name": "Grace Regional Center",
+            "location": {
+                "lat": 37.784845,
+                "lng": -122.439393
+            },
+            "total_beds": 66,
+            "available_beds": 59,
+            "ICU_beds_total": 9,
+            "ICU_beds_available": 0,
+            "doctors_total": 41,
+            "doctors_on_duty": 24,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 72,
+            "operation_theatres": 5,
+            "ventilators": 21,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 66
+        },
+        {
+            "hospital_id": "HOS-024",
+            "hospital_name": "Hope Healthcare",
+            "location": {
+                "lat": 37.700604,
+                "lng": -122.495093
+            },
+            "total_beds": 494,
+            "available_beds": 96,
+            "ICU_beds_total": 31,
+            "ICU_beds_available": 12,
+            "doctors_total": 33,
+            "doctors_on_duty": 30,
+            "emergency_doctors": 1,
+            "nurses_on_duty": 120,
+            "operation_theatres": 9,
+            "ventilators": 32,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 494
+        },
+        {
+            "hospital_id": "HOS-025",
+            "hospital_name": "Grace Medical Center",
+            "location": {
+                "lat": 37.793749,
+                "lng": -122.500797
+            },
+            "total_beds": 212,
+            "available_beds": 158,
+            "ICU_beds_total": 10,
+            "ICU_beds_available": 6,
+            "doctors_total": 133,
+            "doctors_on_duty": 98,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 294,
+            "operation_theatres": 10,
+            "ventilators": 34,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 212
+        },
+        {
+            "hospital_id": "HOS-026",
+            "hospital_name": "Valley Trauma Unit",
+            "location": {
+                "lat": 37.752595,
+                "lng": -122.396701
+            },
+            "total_beds": 94,
+            "available_beds": 47,
+            "ICU_beds_total": 10,
+            "ICU_beds_available": 3,
+            "doctors_total": 40,
+            "doctors_on_duty": 23,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 92,
+            "operation_theatres": 8,
+            "ventilators": 6,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 94
+        },
+        {
+            "hospital_id": "HOS-027",
+            "hospital_name": "Trinity Clinic",
+            "location": {
+                "lat": 37.736643,
+                "lng": -122.478586
+            },
+            "total_beds": 320,
+            "available_beds": 276,
+            "ICU_beds_total": 15,
+            "ICU_beds_available": 8,
+            "doctors_total": 21,
+            "doctors_on_duty": 14,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 42,
+            "operation_theatres": 5,
+            "ventilators": 13,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 320
+        },
+        {
+            "hospital_id": "HOS-028",
+            "hospital_name": "Valley Clinic",
+            "location": {
+                "lat": 37.725919,
+                "lng": -122.407813
+            },
+            "total_beds": 333,
+            "available_beds": 56,
+            "ICU_beds_total": 31,
+            "ICU_beds_available": 14,
+            "doctors_total": 119,
+            "doctors_on_duty": 83,
+            "emergency_doctors": 3,
+            "nurses_on_duty": 166,
+            "operation_theatres": 6,
+            "ventilators": 8,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 333
+        },
+        {
+            "hospital_id": "HOS-029",
+            "hospital_name": "City Healthcare",
+            "location": {
+                "lat": 37.744827,
+                "lng": -122.454847
+            },
+            "total_beds": 384,
+            "available_beds": 7,
+            "ICU_beds_total": 56,
+            "ICU_beds_available": 17,
+            "doctors_total": 80,
+            "doctors_on_duty": 59,
+            "emergency_doctors": 9,
+            "nurses_on_duty": 236,
+            "operation_theatres": 2,
+            "ventilators": 37,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 384
+        },
+        {
+            "hospital_id": "HOS-030",
+            "hospital_name": "Pacific Regional Center",
+            "location": {
+                "lat": 37.746588,
+                "lng": -122.382779
+            },
+            "total_beds": 211,
+            "available_beds": 162,
+            "ICU_beds_total": 16,
+            "ICU_beds_available": 14,
+            "doctors_total": 87,
+            "doctors_on_duty": 85,
+            "emergency_doctors": 8,
+            "nurses_on_duty": 255,
+            "operation_theatres": 9,
+            "ventilators": 34,
+            "trauma_care": "yes",
+            "bloodbank_available": "no",
+            "max_capacity": 211
+        },
+        {
+            "hospital_id": "HOS-031",
+            "hospital_name": "Memorial Regional Center",
+            "location": {
+                "lat": 37.734112,
+                "lng": -122.502179
+            },
+            "total_beds": 492,
+            "available_beds": 253,
+            "ICU_beds_total": 48,
+            "ICU_beds_available": 40,
+            "doctors_total": 57,
+            "doctors_on_duty": 37,
+            "emergency_doctors": 6,
+            "nurses_on_duty": 111,
+            "operation_theatres": 8,
+            "ventilators": 16,
+            "trauma_care": "yes",
+            "bloodbank_available": "no",
+            "max_capacity": 492
+        },
+        {
+            "hospital_id": "HOS-032",
+            "hospital_name": "Metropolitan Surgical Institute",
+            "location": {
+                "lat": 37.777864,
+                "lng": -122.45849
+            },
+            "total_beds": 70,
+            "available_beds": 56,
+            "ICU_beds_total": 8,
+            "ICU_beds_available": 3,
+            "doctors_total": 105,
+            "doctors_on_duty": 68,
+            "emergency_doctors": 12,
+            "nurses_on_duty": 272,
+            "operation_theatres": 2,
+            "ventilators": 24,
+            "trauma_care": "yes",
+            "bloodbank_available": "no",
+            "max_capacity": 70
+        },
+        {
+            "hospital_id": "HOS-033",
+            "hospital_name": "Presidio Hospital",
+            "location": {
+                "lat": 37.783204,
+                "lng": -122.418577
+            },
+            "total_beds": 91,
+            "available_beds": 60,
+            "ICU_beds_total": 13,
+            "ICU_beds_available": 9,
+            "doctors_total": 78,
+            "doctors_on_duty": 37,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 74,
+            "operation_theatres": 10,
+            "ventilators": 30,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 91
+        },
+        {
+            "hospital_id": "HOS-034",
+            "hospital_name": "Grace Medical Center",
+            "location": {
+                "lat": 37.784568,
+                "lng": -122.461368
+            },
+            "total_beds": 483,
+            "available_beds": 167,
+            "ICU_beds_total": 64,
+            "ICU_beds_available": 29,
+            "doctors_total": 123,
+            "doctors_on_duty": 37,
+            "emergency_doctors": 3,
+            "nurses_on_duty": 74,
+            "operation_theatres": 3,
+            "ventilators": 24,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 483
+        },
+        {
+            "hospital_id": "HOS-035",
+            "hospital_name": "Pioneer Medical Center",
+            "location": {
+                "lat": 37.708548,
+                "lng": -122.48923
+            },
+            "total_beds": 98,
+            "available_beds": 23,
+            "ICU_beds_total": 11,
+            "ICU_beds_available": 9,
+            "doctors_total": 117,
+            "doctors_on_duty": 37,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 148,
+            "operation_theatres": 8,
+            "ventilators": 33,
+            "trauma_care": "yes",
+            "bloodbank_available": "no",
+            "max_capacity": 98
+        },
+        {
+            "hospital_id": "HOS-036",
+            "hospital_name": "Valley Hospital",
+            "location": {
+                "lat": 37.737503,
+                "lng": -122.41866
+            },
+            "total_beds": 275,
+            "available_beds": 141,
+            "ICU_beds_total": 36,
+            "ICU_beds_available": 13,
+            "doctors_total": 96,
+            "doctors_on_duty": 95,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 380,
+            "operation_theatres": 8,
+            "ventilators": 14,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 275
+        },
+        {
+            "hospital_id": "HOS-037",
+            "hospital_name": "Samaritan Health System",
+            "location": {
+                "lat": 37.80658,
+                "lng": -122.412629
+            },
+            "total_beds": 321,
+            "available_beds": 94,
+            "ICU_beds_total": 46,
+            "ICU_beds_available": 41,
+            "doctors_total": 146,
+            "doctors_on_duty": 71,
+            "emergency_doctors": 8,
+            "nurses_on_duty": 213,
+            "operation_theatres": 7,
+            "ventilators": 8,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 321
+        },
+        {
+            "hospital_id": "HOS-038",
+            "hospital_name": "Golden Gate Clinic",
+            "location": {
+                "lat": 37.762882,
+                "lng": -122.496025
+            },
+            "total_beds": 127,
+            "available_beds": 5,
+            "ICU_beds_total": 5,
+            "ICU_beds_available": 4,
+            "doctors_total": 79,
+            "doctors_on_duty": 55,
+            "emergency_doctors": 3,
+            "nurses_on_duty": 165,
+            "operation_theatres": 2,
+            "ventilators": 19,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 127
+        },
+        {
+            "hospital_id": "HOS-039",
+            "hospital_name": "County Regional Center",
+            "location": {
+                "lat": 37.736679,
+                "lng": -122.438063
+            },
+            "total_beds": 484,
+            "available_beds": 230,
+            "ICU_beds_total": 57,
+            "ICU_beds_available": 15,
+            "doctors_total": 117,
+            "doctors_on_duty": 113,
+            "emergency_doctors": 18,
+            "nurses_on_duty": 452,
+            "operation_theatres": 12,
+            "ventilators": 17,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 484
+        },
+        {
+            "hospital_id": "HOS-040",
+            "hospital_name": "Sunrise Surgical Institute",
+            "location": {
+                "lat": 37.755637,
+                "lng": -122.5073
+            },
+            "total_beds": 126,
+            "available_beds": 102,
+            "ICU_beds_total": 7,
+            "ICU_beds_available": 4,
+            "doctors_total": 131,
+            "doctors_on_duty": 75,
+            "emergency_doctors": 5,
+            "nurses_on_duty": 225,
+            "operation_theatres": 12,
+            "ventilators": 34,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 126
+        },
+        {
+            "hospital_id": "HOS-041",
+            "hospital_name": "Golden Gate Clinic",
+            "location": {
+                "lat": 37.784448,
+                "lng": -122.416042
+            },
+            "total_beds": 58,
+            "available_beds": 13,
+            "ICU_beds_total": 5,
+            "ICU_beds_available": 1,
+            "doctors_total": 40,
+            "doctors_on_duty": 27,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 81,
+            "operation_theatres": 5,
+            "ventilators": 18,
+            "trauma_care": "yes",
+            "bloodbank_available": "yes",
+            "max_capacity": 58
+        },
+        {
+            "hospital_id": "HOS-042",
+            "hospital_name": "Samaritan Regional Center",
+            "location": {
+                "lat": 37.784073,
+                "lng": -122.399514
+            },
+            "total_beds": 336,
+            "available_beds": 46,
+            "ICU_beds_total": 38,
+            "ICU_beds_available": 10,
+            "doctors_total": 110,
+            "doctors_on_duty": 61,
+            "emergency_doctors": 6,
+            "nurses_on_duty": 122,
+            "operation_theatres": 6,
+            "ventilators": 25,
+            "trauma_care": "yes",
+            "bloodbank_available": "no",
+            "max_capacity": 336
+        },
+        {
+            "hospital_id": "HOS-043",
+            "hospital_name": "Sutter Hospital",
+            "location": {
+                "lat": 37.714604,
+                "lng": -122.508981
+            },
+            "total_beds": 407,
+            "available_beds": 4,
+            "ICU_beds_total": 9,
+            "ICU_beds_available": 4,
+            "doctors_total": 64,
+            "doctors_on_duty": 34,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 68,
+            "operation_theatres": 8,
+            "ventilators": 28,
+            "trauma_care": "yes",
+            "bloodbank_available": "no",
+            "max_capacity": 407
+        },
+        {
+            "hospital_id": "HOS-044",
+            "hospital_name": "Samaritan Medical Center",
+            "location": {
+                "lat": 37.7487,
+                "lng": -122.501573
+            },
+            "total_beds": 493,
+            "available_beds": 125,
+            "ICU_beds_total": 18,
+            "ICU_beds_available": 5,
+            "doctors_total": 52,
+            "doctors_on_duty": 18,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 72,
+            "operation_theatres": 9,
+            "ventilators": 38,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 493
+        },
+        {
+            "hospital_id": "HOS-045",
+            "hospital_name": "Trinity Hospital",
+            "location": {
+                "lat": 37.712394,
+                "lng": -122.380792
+            },
+            "total_beds": 432,
+            "available_beds": 113,
+            "ICU_beds_total": 26,
+            "ICU_beds_available": 9,
+            "doctors_total": 100,
+            "doctors_on_duty": 84,
+            "emergency_doctors": 8,
+            "nurses_on_duty": 336,
+            "operation_theatres": 10,
+            "ventilators": 17,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 432
+        },
+        {
+            "hospital_id": "HOS-046",
+            "hospital_name": "City Medical Center",
+            "location": {
+                "lat": 37.721448,
+                "lng": -122.488095
+            },
+            "total_beds": 356,
+            "available_beds": 105,
+            "ICU_beds_total": 9,
+            "ICU_beds_available": 0,
+            "doctors_total": 44,
+            "doctors_on_duty": 31,
+            "emergency_doctors": 4,
+            "nurses_on_duty": 93,
+            "operation_theatres": 6,
+            "ventilators": 9,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 356
+        },
+        {
+            "hospital_id": "HOS-047",
+            "hospital_name": "Pioneer Surgical Institute",
+            "location": {
+                "lat": 37.749817,
+                "lng": -122.393715
+            },
+            "total_beds": 461,
+            "available_beds": 426,
+            "ICU_beds_total": 13,
+            "ICU_beds_available": 9,
+            "doctors_total": 116,
+            "doctors_on_duty": 71,
+            "emergency_doctors": 6,
+            "nurses_on_duty": 213,
+            "operation_theatres": 5,
+            "ventilators": 27,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 461
+        },
+        {
+            "hospital_id": "HOS-048",
+            "hospital_name": "Mercy Healthcare",
+            "location": {
+                "lat": 37.716605,
+                "lng": -122.448949
+            },
+            "total_beds": 399,
+            "available_beds": 19,
+            "ICU_beds_total": 35,
+            "ICU_beds_available": 4,
+            "doctors_total": 34,
+            "doctors_on_duty": 17,
+            "emergency_doctors": 1,
+            "nurses_on_duty": 68,
+            "operation_theatres": 11,
+            "ventilators": 17,
+            "trauma_care": "no",
+            "bloodbank_available": "yes",
+            "max_capacity": 399
+        },
+        {
+            "hospital_id": "HOS-049",
+            "hospital_name": "Memorial Clinic",
+            "location": {
+                "lat": 37.735751,
+                "lng": -122.434347
+            },
+            "total_beds": 374,
+            "available_beds": 214,
+            "ICU_beds_total": 54,
+            "ICU_beds_available": 20,
+            "doctors_total": 120,
+            "doctors_on_duty": 55,
+            "emergency_doctors": 2,
+            "nurses_on_duty": 165,
+            "operation_theatres": 6,
+            "ventilators": 15,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 374
+        },
+        {
+            "hospital_id": "HOS-050",
+            "hospital_name": "Hope Healthcare",
+            "location": {
+                "lat": 37.763197,
+                "lng": -122.421011
+            },
+            "total_beds": 426,
+            "available_beds": 141,
+            "ICU_beds_total": 56,
+            "ICU_beds_available": 46,
+            "doctors_total": 113,
+            "doctors_on_duty": 37,
+            "emergency_doctors": 5,
+            "nurses_on_duty": 111,
+            "operation_theatres": 6,
+            "ventilators": 9,
+            "trauma_care": "no",
+            "bloodbank_available": "no",
+            "max_capacity": 426
+        }
+    ],
+    "patients": [
+        {
+            "patient_id": "PAT-0001",
+            "name": "Patient 1",
+            "location": {
+                "lat": 37.74374,
+                "lng": -122.449476
+            },
+            "symptoms": "Unconscious",
+            "severity": "Yellow",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": null,
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0002",
+            "name": "Patient 2",
+            "location": {
+                "lat": 37.782752,
+                "lng": -122.503676
+            },
+            "symptoms": "Laceration",
+            "severity": "Green",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-014",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0003",
+            "name": "Patient 3",
+            "location": {
+                "lat": 37.770028,
+                "lng": -122.463495
+            },
+            "symptoms": "Fracture",
+            "severity": "Green",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-003",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0004",
+            "name": "Patient 4",
+            "location": {
+                "lat": 37.769712,
+                "lng": -122.460658
+            },
+            "symptoms": "Fracture",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-017",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0005",
+            "name": "Patient 5",
+            "location": {
+                "lat": 37.760333,
+                "lng": -122.432462
+            },
+            "symptoms": "Difficulty Breathing",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-006",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0006",
+            "name": "Patient 6",
+            "location": {
+                "lat": 37.75306,
+                "lng": -122.445576
+            },
+            "symptoms": "Laceration",
+            "severity": "Green",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": null,
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0007",
+            "name": "Patient 7",
+            "location": {
+                "lat": 37.72094,
+                "lng": -122.432288
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Red",
+            "required_treatment": "First Aid",
+            "assigned_hospital_id": "HOS-014",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0008",
+            "name": "Patient 8",
+            "location": {
+                "lat": 37.746315,
+                "lng": -122.403828
+            },
+            "symptoms": "Burns",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": null,
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0009",
+            "name": "Patient 9",
+            "location": {
+                "lat": 37.789368,
+                "lng": -122.475075
+            },
+            "symptoms": "Burns",
+            "severity": "Green",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": null,
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0010",
+            "name": "Patient 10",
+            "location": {
+                "lat": 37.792256,
+                "lng": -122.405479
+            },
+            "symptoms": "Burns",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-017",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0011",
+            "name": "Patient 11",
+            "location": {
+                "lat": 37.73052,
+                "lng": -122.409654
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-025",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0012",
+            "name": "Patient 12",
+            "location": {
+                "lat": 37.750188,
+                "lng": -122.469673
+            },
+            "symptoms": "Difficulty Breathing",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-021",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0013",
+            "name": "Patient 13",
+            "location": {
+                "lat": 37.72989,
+                "lng": -122.472977
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Yellow",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": null,
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0014",
+            "name": "Patient 14",
+            "location": {
+                "lat": 37.718764,
+                "lng": -122.415257
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Green",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-024",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0015",
+            "name": "Patient 15",
+            "location": {
+                "lat": 37.703145,
+                "lng": -122.458291
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Yellow",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-036",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0016",
+            "name": "Patient 16",
+            "location": {
+                "lat": 37.768036,
+                "lng": -122.397193
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Red",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": null,
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0017",
+            "name": "Patient 17",
+            "location": {
+                "lat": 37.732706,
+                "lng": -122.411115
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Yellow",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-039",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0018",
+            "name": "Patient 18",
+            "location": {
+                "lat": 37.759983,
+                "lng": -122.390259
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Green",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-032",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0019",
+            "name": "Patient 19",
+            "location": {
+                "lat": 37.764457,
+                "lng": -122.460899
+            },
+            "symptoms": "Laceration",
+            "severity": "Yellow",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-014",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0020",
+            "name": "Patient 20",
+            "location": {
+                "lat": 37.738583,
+                "lng": -122.406271
+            },
+            "symptoms": "Fracture",
+            "severity": "Red",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-049",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0021",
+            "name": "Patient 21",
+            "location": {
+                "lat": 37.802425,
+                "lng": -122.504905
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Red",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-001",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0022",
+            "name": "Patient 22",
+            "location": {
+                "lat": 37.723445,
+                "lng": -122.41724
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Green",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-044",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0023",
+            "name": "Patient 23",
+            "location": {
+                "lat": 37.777633,
+                "lng": -122.382863
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Yellow",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-028",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0024",
+            "name": "Patient 24",
+            "location": {
+                "lat": 37.767933,
+                "lng": -122.483924
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Red",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": null,
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0025",
+            "name": "Patient 25",
+            "location": {
+                "lat": 37.743123,
+                "lng": -122.403873
+            },
+            "symptoms": "Burns",
+            "severity": "Yellow",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-014",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0026",
+            "name": "Patient 26",
+            "location": {
+                "lat": 37.801526,
+                "lng": -122.467641
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Green",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": null,
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0027",
+            "name": "Patient 27",
+            "location": {
+                "lat": 37.792876,
+                "lng": -122.501983
+            },
+            "symptoms": "Fracture",
+            "severity": "Yellow",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": null,
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0028",
+            "name": "Patient 28",
+            "location": {
+                "lat": 37.748596,
+                "lng": -122.431572
+            },
+            "symptoms": "Fracture",
+            "severity": "Red",
+            "required_treatment": "First Aid",
+            "assigned_hospital_id": null,
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0029",
+            "name": "Patient 29",
+            "location": {
+                "lat": 37.789863,
+                "lng": -122.400968
+            },
+            "symptoms": "Unconscious",
+            "severity": "Green",
+            "required_treatment": "First Aid",
+            "assigned_hospital_id": null,
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0030",
+            "name": "Patient 30",
+            "location": {
+                "lat": 37.786201,
+                "lng": -122.458508
+            },
+            "symptoms": "Laceration",
+            "severity": "Red",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-033",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0031",
+            "name": "Patient 31",
+            "location": {
+                "lat": 37.700644,
+                "lng": -122.399953
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Green",
+            "required_treatment": "First Aid",
+            "assigned_hospital_id": "HOS-003",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0032",
+            "name": "Patient 32",
+            "location": {
+                "lat": 37.708502,
+                "lng": -122.504025
+            },
+            "symptoms": "Laceration",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-001",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0033",
+            "name": "Patient 33",
+            "location": {
+                "lat": 37.704113,
+                "lng": -122.466342
+            },
+            "symptoms": "Difficulty Breathing",
+            "severity": "Green",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": null,
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0034",
+            "name": "Patient 34",
+            "location": {
+                "lat": 37.709207,
+                "lng": -122.502348
+            },
+            "symptoms": "Burns",
+            "severity": "Green",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-013",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0035",
+            "name": "Patient 35",
+            "location": {
+                "lat": 37.759225,
+                "lng": -122.404445
+            },
+            "symptoms": "Fracture",
+            "severity": "Red",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-002",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0036",
+            "name": "Patient 36",
+            "location": {
+                "lat": 37.781888,
+                "lng": -122.467647
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Yellow",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-040",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0037",
+            "name": "Patient 37",
+            "location": {
+                "lat": 37.738075,
+                "lng": -122.48453
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Yellow",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-008",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0038",
+            "name": "Patient 38",
+            "location": {
+                "lat": 37.710954,
+                "lng": -122.450809
+            },
+            "symptoms": "Laceration",
+            "severity": "Red",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-043",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0039",
+            "name": "Patient 39",
+            "location": {
+                "lat": 37.732397,
+                "lng": -122.473508
+            },
+            "symptoms": "Unconscious",
+            "severity": "Yellow",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-044",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0040",
+            "name": "Patient 40",
+            "location": {
+                "lat": 37.803986,
+                "lng": -122.393231
+            },
+            "symptoms": "Burns",
+            "severity": "Green",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-003",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0041",
+            "name": "Patient 41",
+            "location": {
+                "lat": 37.803658,
+                "lng": -122.493664
+            },
+            "symptoms": "Difficulty Breathing",
+            "severity": "Green",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-017",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0042",
+            "name": "Patient 42",
+            "location": {
+                "lat": 37.786404,
+                "lng": -122.479051
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Green",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-039",
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0043",
+            "name": "Patient 43",
+            "location": {
+                "lat": 37.760815,
+                "lng": -122.432494
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Red",
+            "required_treatment": "First Aid",
+            "assigned_hospital_id": null,
+            "status": "pending"
+        },
+        {
+            "patient_id": "PAT-0044",
+            "name": "Patient 44",
+            "location": {
+                "lat": 37.780854,
+                "lng": -122.465373
+            },
+            "symptoms": "Burns",
+            "severity": "Yellow",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-035",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0045",
+            "name": "Patient 45",
+            "location": {
+                "lat": 37.712943,
+                "lng": -122.452525
+            },
+            "symptoms": "Fracture",
+            "severity": "Yellow",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": null,
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0046",
+            "name": "Patient 46",
+            "location": {
+                "lat": 37.743998,
+                "lng": -122.399291
+            },
+            "symptoms": "Chest Pain",
+            "severity": "Yellow",
+            "required_treatment": "Surgery",
+            "assigned_hospital_id": "HOS-020",
+            "status": "in-progress"
+        },
+        {
+            "patient_id": "PAT-0047",
+            "name": "Patient 47",
+            "location": {
+                "lat": 37.730773,
+                "lng": -122.430953
+            },
+            "symptoms": "Burns",
+            "severity": "Green",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": null,
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0048",
+            "name": "Patient 48",
+            "location": {
+                "lat": 37.744416,
+                "lng": -122.506682
+            },
+            "symptoms": "Blunt Trauma",
+            "severity": "Red",
+            "required_treatment": "ICU",
+            "assigned_hospital_id": "HOS-024",
+            "status": "assigned"
+        },
+        {
+            "patient_id": "PAT-0049",
+            "name": "Patient 49",
+            "location": {
+                "lat": 37.804575,
+                "lng": -122.449085
+            },
+            "symptoms": "Burns",
+            "severity": "Green",
+            "required_treatment": "First Aid",
+            "assigned_hospital_id": "HOS-021",
+            "status": "treated"
+        },
+        {
+            "patient_id": "PAT-0050",
+            "name": "Patient 50",
+            "location": {
+                "lat": 37.790019,
+                "lng": -122.467011
+            },
+            "symptoms": "Unconscious",
+            "severity": "Yellow",
+            "required_treatment": "General Ward",
+            "assigned_hospital_id": "HOS-012",
+            "status": "treated"
+        }
+    ],
+    "staff": [
+        {
+            "staff_id": "STF-0001",
+            "hospital_id": "HOS-036",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0002",
+            "hospital_id": "HOS-039",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0003",
+            "hospital_id": "HOS-015",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0004",
+            "hospital_id": "HOS-021",
+            "role": "doctor",
+            "specialization": "Pediatrician",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0005",
+            "hospital_id": "HOS-023",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0006",
+            "hospital_id": "HOS-019",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0007",
+            "hospital_id": "HOS-035",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0008",
+            "hospital_id": "HOS-034",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0009",
+            "hospital_id": "HOS-034",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0010",
+            "hospital_id": "HOS-015",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0011",
+            "hospital_id": "HOS-019",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0012",
+            "hospital_id": "HOS-015",
+            "role": "doctor",
+            "specialization": "Cardiologist",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0013",
+            "hospital_id": "HOS-033",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0014",
+            "hospital_id": "HOS-005",
+            "role": "doctor",
+            "specialization": "General",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0015",
+            "hospital_id": "HOS-048",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0016",
+            "hospital_id": "HOS-032",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0017",
+            "hospital_id": "HOS-048",
+            "role": "doctor",
+            "specialization": "Pediatrician",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0018",
+            "hospital_id": "HOS-009",
+            "role": "doctor",
+            "specialization": "General",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0019",
+            "hospital_id": "HOS-004",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0020",
+            "hospital_id": "HOS-024",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0021",
+            "hospital_id": "HOS-023",
+            "role": "doctor",
+            "specialization": "Pediatrician",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0022",
+            "hospital_id": "HOS-002",
+            "role": "doctor",
+            "specialization": "Surgeon",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0023",
+            "hospital_id": "HOS-015",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0024",
+            "hospital_id": "HOS-021",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0025",
+            "hospital_id": "HOS-033",
+            "role": "doctor",
+            "specialization": "General",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0026",
+            "hospital_id": "HOS-044",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0027",
+            "hospital_id": "HOS-014",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0028",
+            "hospital_id": "HOS-035",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0029",
+            "hospital_id": "HOS-028",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0030",
+            "hospital_id": "HOS-048",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0031",
+            "hospital_id": "HOS-017",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0032",
+            "hospital_id": "HOS-018",
+            "role": "doctor",
+            "specialization": "Surgeon",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0033",
+            "hospital_id": "HOS-046",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0034",
+            "hospital_id": "HOS-012",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0035",
+            "hospital_id": "HOS-036",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0036",
+            "hospital_id": "HOS-007",
+            "role": "doctor",
+            "specialization": "Cardiologist",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0037",
+            "hospital_id": "HOS-024",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0038",
+            "hospital_id": "HOS-040",
+            "role": "doctor",
+            "specialization": "Surgeon",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0039",
+            "hospital_id": "HOS-034",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0040",
+            "hospital_id": "HOS-018",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0041",
+            "hospital_id": "HOS-039",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0042",
+            "hospital_id": "HOS-010",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0043",
+            "hospital_id": "HOS-050",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0044",
+            "hospital_id": "HOS-045",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0045",
+            "hospital_id": "HOS-023",
+            "role": "paramedic",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0046",
+            "hospital_id": "HOS-043",
+            "role": "doctor",
+            "specialization": "Surgeon",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0047",
+            "hospital_id": "HOS-020",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        },
+        {
+            "staff_id": "STF-0048",
+            "hospital_id": "HOS-042",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0049",
+            "hospital_id": "HOS-020",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "no"
+        },
+        {
+            "staff_id": "STF-0050",
+            "hospital_id": "HOS-049",
+            "role": "nurse",
+            "specialization": "N/A",
+            "on_duty": "yes"
+        }
+    ],
+    "blood_bank_resources": [
+        {
+            "resource_id": "RES-0001",
+            "hospital_id": "HOS-031",
+            "blood_group": "B+",
+            "units_available": 5,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0002",
+            "hospital_id": "HOS-043",
+            "blood_group": "A+",
+            "units_available": 53,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0003",
+            "hospital_id": "HOS-034",
+            "blood_group": "A+",
+            "units_available": 97,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0004",
+            "hospital_id": "HOS-003",
+            "blood_group": "O+",
+            "units_available": 14,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0005",
+            "hospital_id": "HOS-041",
+            "blood_group": "A+",
+            "units_available": 95,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0006",
+            "hospital_id": "HOS-032",
+            "blood_group": "O+",
+            "units_available": 74,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0007",
+            "hospital_id": "HOS-002",
+            "blood_group": "B+",
+            "units_available": 93,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0008",
+            "hospital_id": "HOS-048",
+            "blood_group": "B+",
+            "units_available": 2,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0009",
+            "hospital_id": "HOS-011",
+            "blood_group": "O+",
+            "units_available": 25,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0010",
+            "hospital_id": "HOS-039",
+            "blood_group": "A-",
+            "units_available": 7,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0011",
+            "hospital_id": "HOS-010",
+            "blood_group": "A+",
+            "units_available": 16,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0012",
+            "hospital_id": "HOS-011",
+            "blood_group": "A+",
+            "units_available": 0,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0013",
+            "hospital_id": "HOS-006",
+            "blood_group": "A+",
+            "units_available": 46,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0014",
+            "hospital_id": "HOS-009",
+            "blood_group": "B-",
+            "units_available": 1,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0015",
+            "hospital_id": "HOS-002",
+            "blood_group": "B-",
+            "units_available": 66,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0016",
+            "hospital_id": "HOS-008",
+            "blood_group": "A+",
+            "units_available": 46,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0017",
+            "hospital_id": "HOS-019",
+            "blood_group": "O-",
+            "units_available": 46,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0018",
+            "hospital_id": "HOS-006",
+            "blood_group": "AB-",
+            "units_available": 50,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0019",
+            "hospital_id": "HOS-016",
+            "blood_group": "AB-",
+            "units_available": 57,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0020",
+            "hospital_id": "HOS-019",
+            "blood_group": "O+",
+            "units_available": 66,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0021",
+            "hospital_id": "HOS-030",
+            "blood_group": "AB-",
+            "units_available": 91,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0022",
+            "hospital_id": "HOS-022",
+            "blood_group": "O+",
+            "units_available": 88,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0023",
+            "hospital_id": "HOS-033",
+            "blood_group": "A+",
+            "units_available": 90,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0024",
+            "hospital_id": "HOS-002",
+            "blood_group": "AB-",
+            "units_available": 96,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0025",
+            "hospital_id": "HOS-017",
+            "blood_group": "A+",
+            "units_available": 43,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0026",
+            "hospital_id": "HOS-048",
+            "blood_group": "O+",
+            "units_available": 2,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0027",
+            "hospital_id": "HOS-049",
+            "blood_group": "O+",
+            "units_available": 64,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0028",
+            "hospital_id": "HOS-048",
+            "blood_group": "AB-",
+            "units_available": 51,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0029",
+            "hospital_id": "HOS-010",
+            "blood_group": "B-",
+            "units_available": 31,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0030",
+            "hospital_id": "HOS-048",
+            "blood_group": "B-",
+            "units_available": 12,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0031",
+            "hospital_id": "HOS-008",
+            "blood_group": "AB-",
+            "units_available": 40,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0032",
+            "hospital_id": "HOS-032",
+            "blood_group": "A+",
+            "units_available": 8,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0033",
+            "hospital_id": "HOS-048",
+            "blood_group": "O-",
+            "units_available": 33,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0034",
+            "hospital_id": "HOS-040",
+            "blood_group": "AB+",
+            "units_available": 59,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0035",
+            "hospital_id": "HOS-019",
+            "blood_group": "B-",
+            "units_available": 66,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0036",
+            "hospital_id": "HOS-042",
+            "blood_group": "AB-",
+            "units_available": 53,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0037",
+            "hospital_id": "HOS-036",
+            "blood_group": "AB+",
+            "units_available": 25,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0038",
+            "hospital_id": "HOS-022",
+            "blood_group": "A-",
+            "units_available": 10,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0039",
+            "hospital_id": "HOS-039",
+            "blood_group": "B+",
+            "units_available": 97,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0040",
+            "hospital_id": "HOS-033",
+            "blood_group": "A-",
+            "units_available": 39,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0041",
+            "hospital_id": "HOS-026",
+            "blood_group": "O+",
+            "units_available": 53,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0042",
+            "hospital_id": "HOS-046",
+            "blood_group": "AB-",
+            "units_available": 39,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0043",
+            "hospital_id": "HOS-031",
+            "blood_group": "A-",
+            "units_available": 60,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0044",
+            "hospital_id": "HOS-009",
+            "blood_group": "AB+",
+            "units_available": 46,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0045",
+            "hospital_id": "HOS-030",
+            "blood_group": "B+",
+            "units_available": 98,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0046",
+            "hospital_id": "HOS-019",
+            "blood_group": "A-",
+            "units_available": 81,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0047",
+            "hospital_id": "HOS-032",
+            "blood_group": "A+",
+            "units_available": 4,
+            "shortage_flag": "yes"
+        },
+        {
+            "resource_id": "RES-0048",
+            "hospital_id": "HOS-044",
+            "blood_group": "AB+",
+            "units_available": 20,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0049",
+            "hospital_id": "HOS-047",
+            "blood_group": "O+",
+            "units_available": 39,
+            "shortage_flag": "no"
+        },
+        {
+            "resource_id": "RES-0050",
+            "hospital_id": "HOS-040",
+            "blood_group": "AB+",
+            "units_available": 73,
+            "shortage_flag": "no"
+        }
+    ]
+}
