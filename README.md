@@ -43,7 +43,7 @@ Attach screenshots in a `/proof` folder:
 ---
 
 ## Demo Video
-[Watch Demo](#) *(Insert standard Google Drive Link here when uploaded)*
+[Watch Demo](#) *(https://drive.google.com/file/d/1nLbfzODg6K3gTOMm_d2YDJGF_J0Kucnh/view?usp=drivesdk)*
 
 ---
 
